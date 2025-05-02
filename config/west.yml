@@ -2,6 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
+    - name: ssbb
+      url-base: https://github.com/ssbb
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -9,5 +15,17 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: pipra-zmk-module
+      remote: ssbb
+      clone-depth: 1
+      revision: main
+    - name: ec-support-zmk-module
+      remote: petejohanson
+      clone-depth: 1
+      revision: main
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
+      clone-depth: 1
   self:
     path: config

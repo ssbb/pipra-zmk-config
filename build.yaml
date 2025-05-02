@@ -18,3 +18,12 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: pipra_left
+  - board: pipra_left
+    snippet: enable_ec_calibrator
+    artifact-name: pipra_left_calibrator
+  - board: pipra_right
+  - board: pipra_right
+    snippet: enable_ec_calibrator
+    artifact-name: pipra_right_calibrator
